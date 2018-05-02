@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdffb6;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.settings {
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.settings fieldset {
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.settings fieldset legend {
+    font-weight: bold;
+}
+
+.settings label {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.settings fieldset:nth-child(1) > label {
+    padding: 0;
+}
+
+.settings fieldset:nth-child(1) input {
+    display: block;
+}
+
+.help ol {
+    text-align: left;
+}
+
+.start-btn {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #ff0500;
+}
+
+.board {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    user-select: none;
+}
+
+.timer {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.card-container {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    perspective: 800px;
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.show-card {
+    transform: rotateY(180deg);
+}
+
+.remove-card {
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+.records {
+    float: left;
+}
+
+.records table {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.records td {
+    background-color: #fafafa;
+}
+
+.records td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.records th {
+    background-color: #af5255;
+    color: #fff;
+}

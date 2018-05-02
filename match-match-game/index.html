@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match-Match Game</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Match-Match Game</h1>
+    <section id="timer" class="timer"></section>
+
+    <section id="records" class="records"></section>
+
+    <section id="settings" class="settings">
+        <section class="help">
+            <article>
+                <h3>How to play</h3>
+                <p>
+                    Memory is a counter game where the object is to find pairs.
+                    <br>
+                    When the game begins, all pictures are hidden.
+                </p>
+            </article>
+
+            <article>
+                <h3>To Play</h3>
+                <ol>
+                    <li>Select two cards to try to match the pictures.</li>
+                    <li>If you match the pictures you can go again.</li>
+                    <li>If they don't match it is the computer turns them.</li>
+                    <li>The player that finds all pairs wins!</li>
+                    <li>Have Fun!</li>
+                </ol>
+            </article>
+        </section>
+
+        <form id="settingsForm">
+            <fieldset>
+                <legend>Player profile</legend>
+                <label>First Name *<input type="text" name="firstName" required></label>
+                <label>Last Name<input type="text" name="lastName"></label>
+                <label>Email<input type="email" name="email"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Cards back</legend>
+                <label>
+                    <input type="radio" name="back" value="42" checked>
+                    <img src="img/back/42.jpg" height="100" width="100">
+                </label>
+                <label><input type="radio" name="back" value="rss">
+                    <img src="img/back/rss.jpg" height="100" width="100">
+                </label>
+                <label>
+                    <input type="radio" name="back" value="stars">
+                    <img src="img/back/stars.jpg" height="100" width="100">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Game difficulty</legend>
+                <label><input type="radio" name="count" value="8" checked>Low (4x2)</label>
+                <label><input type="radio" name="count" value="12">Medium (4x3)</label>
+                <label><input type="radio" name="count" value="16">High (4x4)</label>
+            </fieldset>
+            <button class="start-btn">Start</button>
+        </form>
+    </section>
+
+    <section id="board" class="board"></section>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
