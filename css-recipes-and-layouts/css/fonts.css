@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Trend Sans One";
+    src: url("../fonts/TrendSansOne.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("../fonts/cantarell/Cantarell-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
