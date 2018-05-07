@@ -31,7 +31,13 @@ h1 {
 }
 
 h1 span {
-    content: url("../img/logo.png");
+    background: url("../img/logo.png") 0 0 no-repeat;
+    display: block;
+    height: 57px;
+    text-indent: -99999em;
+    width: 56px;
+    overflow: hidden;
+    margin: 0 5px;
 }
 
 h2 {
