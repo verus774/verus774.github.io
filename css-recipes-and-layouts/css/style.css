@@ -259,11 +259,11 @@ p {
     padding-left: 10px;
 }
 
-.fa-facebook:hover {
+.fa-facebook-f:hover {
     background: #3b5999;
 }
 
-.fa-google-plus:hover {
+.fa-google-plus-g:hover {
     background: #d34836;
 }
 
@@ -275,8 +275,8 @@ p {
     background: #4c75a3;
 }
 
-.fa-odnoklassniki:hover {
-    background: #ed812b;
+.fa-yandex:hover {
+    background: #f00;
 }
 
 .sidebar {
@@ -403,11 +403,11 @@ p {
         margin: 0 0 8px;
     }
 
-    .fa-facebook {
+    .fa-facebook-f {
         background-color: #3b5999 !important;
     }
 
-    .fa-google-plus {
+    .fa-google-plus-g {
         background: #d34836 !important;
     }
 
@@ -419,8 +419,8 @@ p {
         background: #4c75a3 !important;
     }
 
-    .fa-odnoklassniki {
-        background: #ed812b !important;
+    .fa-yandex {
+        background: #ff0000 !important;
     }
 }
 
