@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.score table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.score td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}

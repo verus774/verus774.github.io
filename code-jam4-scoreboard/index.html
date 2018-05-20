@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Quick Draw Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>CSS Quick Draw Scoreboard</h1>
+
+<form id="dataset-form">
+    <fieldset>
+        <legend>Dataset type</legend>
+        <label>
+            <input id="is-demo" type="radio" name="dataset" value="demo" checked>
+            rsschool-demo
+        </label>
+        <label>
+            <input type="radio" name="dataset">
+            rsschool
+        </label>
+    </fieldset>
+</form>
+
+<div class="score" id="score"></div>
+
+<script src="js/lodash.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

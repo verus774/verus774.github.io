@@ -1,0 +1,1432 @@
+{
+  "_id": {
+    "$oid": "5af9c7624e08a2000b000028"
+  },
+  "game": "CSSQuickDraw",
+  "game_master_id": "c85e3ad27c035cfb",
+  "puzzles": [{
+    "game": "CSSQuickDraw",
+    "name": "Bits and Pieces",
+    "input": "\u003cspan id=\"me\" data-qdid=\"0\"\u003e\u003c/span\u003e\u003cdiv id=\"not-me\" data-qdid=\"1\"\u003e\u003c/div\u003e\u003cdiv id=\"me\" data-qdid=\"2\"\u003e\u003c/div\u003e\u003cspan id=\"not-me-either\" data-qdid=\"3\"\u003e\u003c/div\u003e",
+    "expected": "[\"2\"]",
+    "hidden": [],
+    "options": {
+      "timeLimit": {
+        "$numberLong": "150"
+      },
+      "bannedCharacters": [":", "~", "+"]
+    },
+    "sandboxSettings": {
+      "timeout": {
+        "$numberLong": "150"
+      },
+      "reloadWorkers": null,
+      "refillWorkers": null,
+      "inputCopies": null
+    }
+  }],
+  "participants": {
+    "39e6bb0cad07022e": {
+      "uid": "39e6bb0cad07022e"
+    },
+    "52dc8df6d849d1e7": {
+      "uid": "52dc8df6d849d1e7"
+    },
+    "d16390349858cc0c": {
+      "uid": "d16390349858cc0c"
+    },
+    "e2118a33ce759dcf": {
+      "uid": "e2118a33ce759dcf"
+    },
+    "f8f1803efa21809f": {
+      "uid": "f8f1803efa21809f"
+    }
+  },
+  "rounds": [{
+    "puzzleIndex": {
+      "$numberLong": "0"
+    },
+    "startTime": {
+      "$date": "2018-05-14T17:32:08.225Z"
+    },
+    "solutions": {
+      "03a2461f7613d00a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "97"
+        },
+        "correct": "Correct"
+      },
+      "053b976e830f1380": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "67"
+        },
+        "correct": "Correct"
+      },
+      "05cafc0b5c9ae78c": {
+        "code": "#me#",
+        "time": {
+          "$numberLong": "144"
+        },
+        "correct": "Incorrect"
+      },
+      "0879d2a167cef132": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "08bc05c40aee0ef6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "47"
+        },
+        "correct": "Correct"
+      },
+      "0af2c05d62662e75": {
+        "code": "div[id=\"me\"]",
+        "time": {
+          "$numberLong": "125"
+        },
+        "correct": "Correct"
+      },
+      "0b51479a7fe6fc9d": {
+        "code": "getElementById('me')",
+        "time": {
+          "$numberLong": "62"
+        },
+        "correct": "Incorrect"
+      },
+      "0b914dc18e1050e4": {
+        "code": ":nth-child(3)",
+        "time": {
+          "$numberLong": "66"
+        },
+        "correct": "Incorrect"
+      },
+      "0c265c8b844334a6": {
+        "code": "div[id=\"me",
+        "time": {
+          "$numberLong": "135"
+        },
+        "correct": "Correct"
+      },
+      "0d6d4955615a97f6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "16"
+        },
+        "correct": "Correct"
+      },
+      "0e3b3572c97b9718": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "101"
+        },
+        "correct": "Correct"
+      },
+      "0e7fa1fc555463c5": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "43"
+        },
+        "correct": "Correct"
+      },
+      "0e8ceb668d96c395": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "97"
+        },
+        "correct": "Correct"
+      },
+      "0ea95482cf1613a8": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "70"
+        },
+        "correct": "Correct"
+      },
+      "105cabccd21f71d9": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "94"
+        },
+        "correct": "Correct"
+      },
+      "15ae967d9528d531": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "144"
+        },
+        "correct": "Correct"
+      },
+      "15b78c7bb0b1289c": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "25"
+        },
+        "correct": "Correct"
+      },
+      "15ba94ae0f3567cc": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "96"
+        },
+        "correct": "Correct"
+      },
+      "183ba0915aa7e0c6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "31"
+        },
+        "correct": "Correct"
+      },
+      "1a8787d5ac3c2faf": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "93"
+        },
+        "correct": "Correct"
+      },
+      "1b6fedf5a10e00b3": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "101"
+        },
+        "correct": "Correct"
+      },
+      "1d3a37f2f99c1d79": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "86"
+        },
+        "correct": "Correct"
+      },
+      "1dc1b34c3693ea0a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "46"
+        },
+        "correct": "Correct"
+      },
+      "1dfdc28819143b61": {
+        "code": "#not-me+#me",
+        "time": {
+          "$numberLong": "68"
+        },
+        "correct": "Incorrect"
+      },
+      "1e7b712f4c1a2174": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "86"
+        },
+        "correct": "Correct"
+      },
+      "1f7dcabd98f331fe": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "61"
+        },
+        "correct": "Correct"
+      },
+      "209d7079788ec8b6": {
+        "code": "div[id=\"me\"]",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Correct"
+      },
+      "21c3a666ff63e628": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "132"
+        },
+        "correct": "Correct"
+      },
+      "23a382d9c5934c7a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "77"
+        },
+        "correct": "Correct"
+      },
+      "2433fad4af9b8c91": {
+        "code": "#me:last-child(){}",
+        "time": {
+          "$numberLong": "77"
+        },
+        "correct": "Incorrect"
+      },
+      "25e3583c5051e437": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "139"
+        },
+        "correct": "Correct"
+      },
+      "25eb9ebbb7f770c4": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "28"
+        },
+        "correct": "Correct"
+      },
+      "2689957139a0b7f3": {
+        "code": "div~div",
+        "time": {
+          "$numberLong": "148"
+        },
+        "correct": "Incorrect"
+      },
+      "2764eadce35f57da": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "46"
+        },
+        "correct": "Correct"
+      },
+      "280f2bf613bf2356": {
+        "code": "div[id=\"me\"]",
+        "time": {
+          "$numberLong": "42"
+        },
+        "correct": "Correct"
+      },
+      "2c25bb954402149d": {
+        "code": "div[id=me",
+        "time": {
+          "$numberLong": "98"
+        },
+        "correct": "Correct"
+      },
+      "2ceb4a35b4cf3a82": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "52"
+        },
+        "correct": "Correct"
+      },
+      "2d9ba0d32391edad": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "84"
+        },
+        "correct": "Correct"
+      },
+      "2e24514882f54cb5": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "86"
+        },
+        "correct": "Correct"
+      },
+      "2e2f307791d02365": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Correct"
+      },
+      "30613bfc396ce2d9": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Correct"
+      },
+      "308b0b8c8ed4e4b2": {
+        "code": "div[id=me]",
+        "time": {
+          "$numberLong": "43"
+        },
+        "correct": "Correct"
+      },
+      "30aded38fc2a4e31": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "27"
+        },
+        "correct": "Correct"
+      },
+      "325dee48ddc82c6a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "51"
+        },
+        "correct": "Correct"
+      },
+      "327403c74f242fc4": {
+        "code": "",
+        "time": {
+          "$numberLong": "150"
+        },
+        "correct": "Incorrect"
+      },
+      "337908399ff8968d": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "30"
+        },
+        "correct": "Correct"
+      },
+      "34d3ed1fe14ff7aa": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "36"
+        },
+        "correct": "Correct"
+      },
+      "36845437c429a4dc": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "67"
+        },
+        "correct": "Correct"
+      },
+      "3894d304c65d5923": {
+        "code": "#me",
+        "time": {
+          "$numberLong": "150"
+        },
+        "correct": "Incorrect"
+      },
+      "38a04576b770c322": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "23"
+        },
+        "correct": "Correct"
+      },
+      "39e6bb0cad07022e": {
+        "code": "d#me",
+        "time": {
+          "$numberLong": "150"
+        },
+        "correct": "Incorrect"
+      },
+      "39f73309c9835f82": {
+        "code": "div[id='me']",
+        "time": {
+          "$numberLong": "114"
+        },
+        "correct": "Correct"
+      },
+      "3ba45068e9680c30": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "70"
+        },
+        "correct": "Correct"
+      },
+      "3d0181f3e81ef243": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "46"
+        },
+        "correct": "Correct"
+      },
+      "3d3363560523d9a8": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "98"
+        },
+        "correct": "Correct"
+      },
+      "3d98fc87920f7e0c": {
+        "code": "nth-child(3)",
+        "time": {
+          "$numberLong": "121"
+        },
+        "correct": "Incorrect"
+      },
+      "3e3d5879b907655c": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "79"
+        },
+        "correct": "Correct"
+      },
+      "3e3e38b35680eeb3": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "46"
+        },
+        "correct": "Correct"
+      },
+      "3e559963b46090f4": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "62"
+        },
+        "correct": "Correct"
+      },
+      "3f8fa0047ef8f923": {
+        "code": "[id=\"not-me + #me",
+        "time": {
+          "$numberLong": "151"
+        },
+        "correct": "Incorrect"
+      },
+      "41e6eb3636b0dea6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "19"
+        },
+        "correct": "Correct"
+      },
+      "44f18460ff54c8ca": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "36"
+        },
+        "correct": "Correct"
+      },
+      "45eb8ba11385b6f8": {
+        "code": "#me",
+        "time": {
+          "$numberLong": "148"
+        },
+        "correct": "Incorrect"
+      },
+      "47b0d3c480c0499f": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "72"
+        },
+        "correct": "Correct"
+      },
+      "480ab1735929fbdf": {
+        "code": "div #me {}",
+        "time": {
+          "$numberLong": "116"
+        },
+        "correct": "Incorrect"
+      },
+      "484d657a50c7d58b": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "497ce103c8ff6039": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "102"
+        },
+        "correct": "Correct"
+      },
+      "4b105e51e4c08180": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "33"
+        },
+        "correct": "Correct"
+      },
+      "4f118d5e0b612b81": {
+        "code": "div['id = \"me\"']",
+        "time": {
+          "$numberLong": "135"
+        },
+        "correct": "Incorrect"
+      },
+      "50a53578f3677bb3": {
+        "code": "#me:nth-child()",
+        "time": {
+          "$numberLong": "151"
+        },
+        "correct": "Incorrect"
+      },
+      "515d626ac13d7d49": {
+        "code": "nth-child(3n)",
+        "time": {
+          "$numberLong": "133"
+        },
+        "correct": "Incorrect"
+      },
+      "52dc8df6d849d1e7": {
+        "code": "div[id='me']",
+        "time": {
+          "$numberLong": "41"
+        },
+        "correct": "Correct"
+      },
+      "532967272335f916": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "111"
+        },
+        "correct": "Correct"
+      },
+      "53ef06de121e27da": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "45"
+        },
+        "correct": "Correct"
+      },
+      "549834a2acb1f1f4": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "10"
+        },
+        "correct": "Correct"
+      },
+      "54e73de62df42630": {
+        "code": "div[id=me]",
+        "time": {
+          "$numberLong": "128"
+        },
+        "correct": "Correct"
+      },
+      "5501f3e4936798dc": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "38"
+        },
+        "correct": "Correct"
+      },
+      "5549ebaf4b8de4a9": {
+        "code": "div:me",
+        "time": {
+          "$numberLong": "148"
+        },
+        "correct": "Incorrect"
+      },
+      "5770ae1f766e11be": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "144"
+        },
+        "correct": "Correct"
+      },
+      "5bbed2dff9851a90": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "116"
+        },
+        "correct": "Correct"
+      },
+      "5bc62ebbe1547412": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "99"
+        },
+        "correct": "Correct"
+      },
+      "5c43f7ec7ed24f5c": {
+        "code": "div ",
+        "time": {
+          "$numberLong": "150"
+        },
+        "correct": "Incorrect"
+      },
+      "5ec5a92c865a392a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "41"
+        },
+        "correct": "Correct"
+      },
+      "5f2f9653eecd1dcd": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "121"
+        },
+        "correct": "Correct"
+      },
+      "6284773c1c70faa0": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "17"
+        },
+        "correct": "Correct"
+      },
+      "649f56b9ee432b59": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "36"
+        },
+        "correct": "Correct"
+      },
+      "65bac3ee110db920": {
+        "code": "span\u003e#me",
+        "time": {
+          "$numberLong": "106"
+        },
+        "correct": "Incorrect"
+      },
+      "68951f264bf7e0af": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "141"
+        },
+        "correct": "Correct"
+      },
+      "69ef442e4c072287": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "113"
+        },
+        "correct": "Correct"
+      },
+      "6a022651b53ff8e4": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "83"
+        },
+        "correct": "Correct"
+      },
+      "6aa28c09c1567f21": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "45"
+        },
+        "correct": "Correct"
+      },
+      "6cfd71f6b043c8ae": {
+        "code": "div#me ",
+        "time": {
+          "$numberLong": "39"
+        },
+        "correct": "Correct"
+      },
+      "6e3bb276c237e728": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "113"
+        },
+        "correct": "Correct"
+      },
+      "6e61365b7906364a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "69"
+        },
+        "correct": "Correct"
+      },
+      "749660598055b524": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "142"
+        },
+        "correct": "Correct"
+      },
+      "754a05bec8fc1059": {
+        "code": "#me div",
+        "time": {
+          "$numberLong": "147"
+        },
+        "correct": "Incorrect"
+      },
+      "7b4401b3c14db5ae": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "12"
+        },
+        "correct": "Correct"
+      },
+      "7e5b2cec850a2aff": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "7f279e34bfbd28d8": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "50"
+        },
+        "correct": "Correct"
+      },
+      "7f8285ca08a7c23d": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "35"
+        },
+        "correct": "Correct"
+      },
+      "81f2828320160384": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "68"
+        },
+        "correct": "Correct"
+      },
+      "81f3673d45dbbd11": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "54"
+        },
+        "correct": "Correct"
+      },
+      "830cdf0b52f7e097": {
+        "code": "#me \u003e #me",
+        "time": {
+          "$numberLong": "139"
+        },
+        "correct": "Incorrect"
+      },
+      "86b3ac39c3322df7": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "27"
+        },
+        "correct": "Correct"
+      },
+      "87a6eaef0181d2b0": {
+        "code": "~",
+        "time": {
+          "$numberLong": "142"
+        },
+        "correct": "Incorrect"
+      },
+      "8b110191c4ec82e6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "118"
+        },
+        "correct": "Correct"
+      },
+      "8c1f7ac2879400f3": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "32"
+        },
+        "correct": "Correct"
+      },
+      "90e1114fbfc49b4c": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "48"
+        },
+        "correct": "Correct"
+      },
+      "911414941b2523a0": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "51"
+        },
+        "correct": "Correct"
+      },
+      "911bca702e73f25e": {
+        "code": "",
+        "time": {
+          "$numberLong": "135"
+        },
+        "correct": "Incorrect"
+      },
+      "916088f8a25f68ab": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "42"
+        },
+        "correct": "Correct"
+      },
+      "9379cba22d7ac999": {
+        "code": "div[id=\"me",
+        "time": {
+          "$numberLong": "74"
+        },
+        "correct": "Correct"
+      },
+      "93a6a7d94f4918ff": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "47"
+        },
+        "correct": "Correct"
+      },
+      "972d87a6873ec9b3": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "44"
+        },
+        "correct": "Correct"
+      },
+      "9e6c2caff1d3b44e": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "57"
+        },
+        "correct": "Correct"
+      },
+      "9ebd206bb5ff5c50": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "34"
+        },
+        "correct": "Correct"
+      },
+      "9f2dfe266d0926fd": {
+        "code": "div[id=\"me\"]",
+        "time": {
+          "$numberLong": "64"
+        },
+        "correct": "Correct"
+      },
+      "a43e0947ef6a39e6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "a7f10cfda0281de1": {
+        "code": "",
+        "time": {
+          "$numberLong": "149"
+        },
+        "correct": "Incorrect"
+      },
+      "a9e4e4bf5bbd44e2": {
+        "code": "#me:nth-child(1);",
+        "time": {
+          "$numberLong": "135"
+        },
+        "correct": "Incorrect"
+      },
+      "aa3387eff3195a54": {
+        "code": "id",
+        "time": {
+          "$numberLong": "104"
+        },
+        "correct": "Incorrect"
+      },
+      "adb27aa50f322c9a": {
+        "code": "#me",
+        "time": {
+          "$numberLong": "64"
+        },
+        "correct": "Incorrect"
+      },
+      "af94e1b49f9fd125": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "b072bc5fe4196a18": {
+        "code": "div[id='me",
+        "time": {
+          "$numberLong": "51"
+        },
+        "correct": "Correct"
+      },
+      "b3e25403b5a88b4c": {
+        "code": "",
+        "time": {
+          "$numberLong": "125"
+        },
+        "correct": "Incorrect"
+      },
+      "b4b9095a568f933b": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "72"
+        },
+        "correct": "Correct"
+      },
+      "b548101a3c7f3918": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "57"
+        },
+        "correct": "Correct"
+      },
+      "b606ffc3e12081e8": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "67"
+        },
+        "correct": "Correct"
+      },
+      "b62ddb49add38fb7": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "25"
+        },
+        "correct": "Correct"
+      },
+      "b6a56483a4bfda2e": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "32"
+        },
+        "correct": "Correct"
+      },
+      "b81f90294ff8a0d0": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "68"
+        },
+        "correct": "Correct"
+      },
+      "b84f6febc1eb8052": {
+        "code": "#not-me",
+        "time": {
+          "$numberLong": "149"
+        },
+        "correct": "Incorrect"
+      },
+      "b8a7b1aafdd054f6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "39"
+        },
+        "correct": "Correct"
+      },
+      "b956b65fac918b0d": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "43"
+        },
+        "correct": "Correct"
+      },
+      "bc007c7eb12b758f": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "93"
+        },
+        "correct": "Correct"
+      },
+      "bca8480f5abd3622": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "50"
+        },
+        "correct": "Correct"
+      },
+      "bd750af9cdc1205a": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "80"
+        },
+        "correct": "Correct"
+      },
+      "bd7703518ae1a7cc": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "119"
+        },
+        "correct": "Correct"
+      },
+      "bde7ea1c0cae6b23": {
+        "code": "div div ",
+        "time": {
+          "$numberLong": "139"
+        },
+        "correct": "Incorrect"
+      },
+      "bdf748994d76821c": {
+        "code": ":",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Incorrect"
+      },
+      "be36e54d93ecfde9": {
+        "code": "#me",
+        "time": {
+          "$numberLong": "145"
+        },
+        "correct": "Incorrect"
+      },
+      "bfb56b4a3a4e3ae0": {
+        "code": "div:nth-child(3)",
+        "time": {
+          "$numberLong": "146"
+        },
+        "correct": "Incorrect"
+      },
+      "bfe18e93e86f6198": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "62"
+        },
+        "correct": "Correct"
+      },
+      "c0709a23b54fbdaa": {
+        "code": "",
+        "time": {
+          "$numberLong": "140"
+        },
+        "correct": "Incorrect"
+      },
+      "c0ba15209a6160bd": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "97"
+        },
+        "correct": "Correct"
+      },
+      "c1605be742d312f7": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "83"
+        },
+        "correct": "Correct"
+      },
+      "c262edfa406f1703": {
+        "code": "",
+        "time": {
+          "$numberLong": "135"
+        },
+        "correct": "Incorrect"
+      },
+      "c408a16d75df00b1": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "33"
+        },
+        "correct": "Correct"
+      },
+      "c66aede190d5feb5": {
+        "code": "",
+        "time": {
+          "$numberLong": "150"
+        },
+        "correct": "Incorrect"
+      },
+      "c6fe7dc836560d6c": {
+        "code": ".span:last-chi",
+        "time": {
+          "$numberLong": "151"
+        },
+        "correct": "Incorrect"
+      },
+      "c80f59106768f8fc": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "29"
+        },
+        "correct": "Correct"
+      },
+      "c885a4c52d41db0a": {
+        "code": "div#me ",
+        "time": {
+          "$numberLong": "49"
+        },
+        "correct": "Correct"
+      },
+      "c95f2638084b7864": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "48"
+        },
+        "correct": "Correct"
+      },
+      "cb3f71bd93fe9387": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "10"
+        },
+        "correct": "Correct"
+      },
+      "cc334b6cceb2c0c7": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "27"
+        },
+        "correct": "Correct"
+      },
+      "cccbd9bb94b15ee6": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "35"
+        },
+        "correct": "Correct"
+      },
+      "cd80f4cca6f54bbd": {
+        "code": "div#me ",
+        "time": {
+          "$numberLong": "53"
+        },
+        "correct": "Correct"
+      },
+      "d16390349858cc0c": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "80"
+        },
+        "correct": "Correct"
+      },
+      "d2ec74f1f660690f": {
+        "code": ":",
+        "time": {
+          "$numberLong": "149"
+        },
+        "correct": "Incorrect"
+      },
+      "d36c84d5b707caa5": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "64"
+        },
+        "correct": "Correct"
+      },
+      "d37d52b418e0a03c": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "45"
+        },
+        "correct": "Correct"
+      },
+      "d391e126a6560e50": {
+        "code": "document.getElementByld(\"me\")",
+        "time": {
+          "$numberLong": "149"
+        },
+        "correct": "Incorrect"
+      },
+      "d478346a5082cb06": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "149"
+        },
+        "correct": "Correct"
+      },
+      "d6a4e972f89f58c2": {
+        "code": "#me",
+        "time": {
+          "$numberLong": "85"
+        },
+        "correct": "Incorrect"
+      },
+      "d78da08ba35da4da": {
+        "code": "#id me me",
+        "time": {
+          "$numberLong": "129"
+        },
+        "correct": "Incorrect"
+      },
+      "d845ae29dc6912c0": {
+        "code": "#me div",
+        "time": {
+          "$numberLong": "124"
+        },
+        "correct": "Incorrect"
+      },
+      "d914030007949409": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "d971459e842f8ac0": {
+        "code": "#me~",
+        "time": {
+          "$numberLong": "140"
+        },
+        "correct": "Incorrect"
+      },
+      "da737425476c1e9c": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "37"
+        },
+        "correct": "Correct"
+      },
+      "e0dcdae0eefc008d": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Correct"
+      },
+      "e1515b0aaf35f202": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "89"
+        },
+        "correct": "Correct"
+      },
+      "e1c3bea6d9deb895": {
+        "code": "div \u003e me",
+        "time": {
+          "$numberLong": "119"
+        },
+        "correct": "Incorrect"
+      },
+      "e2118a33ce759dcf": {
+        "code": " div#me",
+        "time": {
+          "$numberLong": "48"
+        },
+        "correct": "Correct"
+      },
+      "e35fd0231118b8d7": {
+        "code": "div #me",
+        "time": {
+          "$numberLong": "134"
+        },
+        "correct": "Incorrect"
+      },
+      "e756fa9295ad1eed": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "89"
+        },
+        "correct": "Correct"
+      },
+      "e7a0322647de571b": {
+        "code": "div[id='me']",
+        "time": {
+          "$numberLong": "81"
+        },
+        "correct": "Correct"
+      },
+      "e901657bdc9a5c8e": {
+        "code": "div,#",
+        "time": {
+          "$numberLong": "150"
+        },
+        "correct": "Incorrect"
+      },
+      "ea423a7a257965d5": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "9"
+        },
+        "correct": "Correct"
+      },
+      "ea90a292408db4cd": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "40"
+        },
+        "correct": "Correct"
+      },
+      "eb370cad0cdbdbbc": {
+        "code": "div[id=\"me\"]",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Correct"
+      },
+      "ec8c03effc5b296e": {
+        "code": "div #me",
+        "time": {
+          "$numberLong": "132"
+        },
+        "correct": "Incorrect"
+      },
+      "ec98d8bbf455e711": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "85"
+        },
+        "correct": "Correct"
+      },
+      "ecf284cb61b39042": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "9"
+        },
+        "correct": "Correct"
+      },
+      "eea8905c611f6305": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "44"
+        },
+        "correct": "Correct"
+      },
+      "f134617bd286a050": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "75"
+        },
+        "correct": "Correct"
+      },
+      "f3d4f734582a568c": {
+        "code": "",
+        "time": {
+          "$numberLong": "145"
+        },
+        "correct": "Incorrect"
+      },
+      "f560fbf3a1ff7e95": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "67"
+        },
+        "correct": "Correct"
+      },
+      "f62cb888146a1b0b": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "113"
+        },
+        "correct": "Correct"
+      },
+      "f65b770c17c75f32": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "54"
+        },
+        "correct": "Correct"
+      },
+      "f7287e04ee25af0e": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "46"
+        },
+        "correct": "Correct"
+      },
+      "f8f1803efa21809f": {
+        "code": "div#me ",
+        "time": {
+          "$numberLong": "124"
+        },
+        "correct": "Correct"
+      },
+      "f94da096f90b989a": {
+        "code": "#me",
+        "time": {
+          "$numberLong": "144"
+        },
+        "correct": "Incorrect"
+      },
+      "fac46268469de859": {
+        "code": "div ",
+        "time": {
+          "$numberLong": "149"
+        },
+        "correct": "Incorrect"
+      },
+      "fbdeb72cd7b8eac3": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "73"
+        },
+        "correct": "Correct"
+      },
+      "fd2e01c77a9563f3": {
+        "code": "div#me",
+        "time": {
+          "$numberLong": "115"
+        },
+        "correct": "Correct"
+      }
+    }
+  }],
+  "player_input": {},
+  "puzzle_index": {
+    "$numberLong": "0"
+  },
+  "round_phase": "End",
+  "start_countdown": {
+    "$numberLong": "0"
+  },
+  "round_countdown": {
+    "$numberLong": "0"
+  },
+  "alias": "rsschool-demo"
+}
