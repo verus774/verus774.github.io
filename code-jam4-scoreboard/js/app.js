@@ -1,5 +1,36 @@
 let puzzles;
 const roundTime = 150;
+const chartsLimit = 10;
+
+const ctx = document.getElementById('scoreChart');
+const chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: []
+    },
+    options: {
+        responsive: true,
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Puzzle'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Time'
+                }
+            }]
+        }
+    }
+});
+
+let lineColor = ['red', 'green', 'pink', 'yellow', 'brown', 'purple', 'blue', 'orange', 'gray', 'black'];
 
 function getUsers() {
     return fetch('data/users.json').then(res => res.json());
@@ -26,6 +57,10 @@ function getAllData(demo = false) {
 function transformData(users, sessions) {
     const res = [];
     puzzles = _.map(sessions.puzzles, 'name');
+
+    chart.data.labels = puzzles;
+    chart.data.datasets = [];
+    chart.update();
 
     _.forEach(sessions.rounds, round => {
         _.forEach(round.solutions, (solution, user) => {
@@ -66,6 +101,10 @@ function createTable(container, data) {
     totalCell.textContent = 'Total';
     tr.appendChild(totalCell);
 
+    const comparisonCell = document.createElement('th');
+    comparisonCell.textContent = 'Comparison';
+    tr.appendChild(comparisonCell);
+
     _.forEach(data, (solutions, idx) => {
         const tr = table.insertRow();
 
@@ -74,13 +113,15 @@ function createTable(container, data) {
         tr.appendChild(td);
 
         let total = 0;
+        const time = [];
         _.forEach(puzzles, puzzle => {
             const td = document.createElement('td');
             td.textContent = roundTime;
 
-            const solution =_.find(solutions, {round: puzzle});
-            if(solution) {
+            const solution = _.find(solutions, {round: puzzle});
+            if (solution) {
                 td.textContent = solution.time;
+                time.push(Number(solution.time));
                 td.setAttribute('title', solution.code);
             }
 
@@ -91,6 +132,38 @@ function createTable(container, data) {
         const totalCell = document.createElement('td');
         totalCell.textContent = total;
         tr.appendChild(totalCell);
+
+        const comparisonCell = document.createElement('td');
+
+        const label = document.createElement('label');
+        label.textContent = 'Compare';
+
+        const checkBox = document.createElement('input');
+        checkBox.type = 'checkbox';
+        checkBox.addEventListener('click', (evt) => {
+            let target = evt.target;
+
+            if (target.checked) {
+                if (chart.data.datasets.length < chartsLimit) {
+                    chart.data.datasets.push({
+                        label: solutions.displayName,
+                        data: time,
+                        backgroundColor: 'transparent',
+                        borderColor: lineColor.pop()
+                    });
+                    chart.update();
+                } else {
+                    target.checked = false;
+                }
+            } else {
+                _.remove(chart.data.datasets, {label: solutions.displayName});
+                chart.update();
+            }
+        });
+
+        label.appendChild(checkBox);
+        comparisonCell.appendChild(label);
+        tr.appendChild(comparisonCell);
     });
 
     container.appendChild(table);
