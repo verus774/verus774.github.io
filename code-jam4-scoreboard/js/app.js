@@ -30,7 +30,15 @@ const chart = new Chart(ctx, {
     }
 });
 
-let lineColor = ['red', 'green', 'pink', 'yellow', 'brown', 'purple', 'blue', 'orange', 'gray', 'black'];
+function getRandomColor() {
+    const hexAlphabet = 'ABCDEF0123456789';
+    let res = '#';
+
+    for (let i = 0; i < 6; i++) {
+        res += hexAlphabet[Math.floor(Math.random() * 16)];
+    }
+    return res;
+}
 
 function getUsers() {
     return fetch('data/users.json').then(res => res.json());
@@ -149,7 +157,7 @@ function createTable(container, data) {
                         label: solutions.displayName,
                         data: time,
                         backgroundColor: 'transparent',
-                        borderColor: lineColor.pop()
+                        borderColor: getRandomColor()
                     });
                     chart.update();
                 } else {
