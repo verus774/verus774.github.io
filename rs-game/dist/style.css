@@ -1,0 +1,492 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ul {
+	list-style: none;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    background: #bca6cb url(img/bg.png) no-repeat center;
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Russo One", sans-serif;
+    font-size: 22px;
+}
+
+input {
+    font-family: inherit;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation-name: fadeOut;
+    animation-duration: 0.3s;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slide-left {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.slide-right {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    z-index: 9999;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.button-close {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu-item {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    border: 3px solid #c4d4d9;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.disable-click {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task > * {
+    margin: 10px 0;
+}
+
+.task-correct {
+    background-color: #adff8a;
+}
+
+.task-wrong {
+    background-color: #ff9f84;
+}
+
+@font-face {
+    font-family: "Russo One";
+    src: url(fonts/RussoOne-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.translate-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.translate-task > * {
+    margin: 10px 0;
+}
+
+.spells-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.spell {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    border: 3px solid red;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.spell:hover {
+    transform: scale(1.1);
+}
+
+.spell-healing {
+    border-color: green;
+}
+
+.scores {
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scores td {
+    background-color: #fafafa;
+}
+
+.scores td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.scores th {
+    background-color: #af5255;
+    color: #fff;
+}
+
+.btn {
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+    line-height: 1.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-green {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.welcome {
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.welcome form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome form > * {
+    margin-bottom: 20px;
+}
+
+.welcome:before {
+    content: "";
+    background: url(img/head.svg) no-repeat center;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.welcome h1 span {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: #e60000;
+}
+
+.char-info {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    background: url(img/plank.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.char-hp {
+    color: #f00;
+}
+
+.char-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes player-head {
+    50% {
+        transform: translateY(75px);
+    }
+}
+
+.player-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-head {
+    height: 146px;
+    margin-left: 20px;
+    transform: translateY(70px);
+    animation: player-head 1.3s infinite ease-in-out;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.player-body {
+    margin-top: 60px;
+    height: 272px;
+}
+
+@keyframes head {
+    50% {
+        transform: translateY(70px);
+    }
+}
+
+@keyframes weapon {
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+.monster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    z-index: 1;
+    transform: translateY(60px);
+    animation: head 1.5s infinite ease-in-out;
+}
+
+.body-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arms {
+    position: absolute;
+    z-index: -1;
+    transform: translateY(33px);
+}
+
+.legs {
+    z-index: -1;
+    transform: translateY(-100px);
+}
+
+.math-task {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 30px;
+}
+
+.math-task input {
+    width: 70px;
+}
+
+.math-task > * {
+    margin: 0 10px;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
