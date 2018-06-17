@@ -8,5 +8,8 @@
   {"word": "fly", "translation": ["летать", "лететь","муха", "полет"]},
   {"word": "hold", "translation": ["держать", "занимать", "удерживать", "захват"]},
   {"word": "apple", "translation": ["яблоко", "яблоня", "яблочный"]},
-  {"word": "think", "translation": ["думать", "мыслить", "считать", "мысль"]}
+  {"word": "think", "translation": ["думать", "мыслить", "считать", "мысль"]},
+  {"word": "sea", "translation": ["море"]},
+  {"word": "dog", "translation": ["собака", "пес", "пёс"]},
+  {"word": "white", "translation": ["белый"]}
 ]

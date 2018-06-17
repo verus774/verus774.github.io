@@ -169,6 +169,30 @@ input {
     }
 }
 
+.zoom-in {
+    animation-name: zoom-in;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes zoom-in {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.zoom-out {
+    animation-name: zoom-out;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes zoom-out {
+    50% {
+        transform: scale(0.8);
+    }
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -214,6 +238,7 @@ input {
     display: flex;
     justify-content: center;
     padding: 10px;
+    z-index: 19;
 }
 
 .menu-item {
@@ -235,30 +260,36 @@ input {
     opacity: 0.5;
 }
 
-.task {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.task > * {
-    margin: 10px 0;
-}
-
-.task-correct {
-    background-color: #adff8a;
-}
-
-.task-wrong {
-    background-color: #ff9f84;
-}
-
 @font-face {
     font-family: "Russo One";
     src: url(fonts/RussoOne-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+}
+
+.math-task {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 30px;
+}
+
+.math-task input {
+    width: 70px;
+}
+
+.math-task > * {
+    margin: 0 10px;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .translate-task {
@@ -299,7 +330,7 @@ input {
 }
 
 .scores {
-    margin-top: 20px;
+    margin: 20px 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -392,10 +423,26 @@ input {
     align-items: center;
 }
 
+.char-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @keyframes player-head {
     50% {
         transform: translateY(75px);
     }
+}
+
+@keyframes player-on-damage {
+    50% {
+        transform-origin: left bottom;
+        transform: rotate(-10deg);
+    }
+}
+
+.player-on-damage {
+    animation: player-on-damage 2s;
 }
 
 .player-container {
@@ -429,10 +476,15 @@ input {
     }
 }
 
-@keyframes weapon {
+@keyframes monster-on-damage {
     50% {
-        transform: rotate(-45deg);
+        transform-origin: right bottom;
+        transform: rotate(10deg);
     }
+}
+
+.monster-on-damage {
+    animation: monster-on-damage 2s;
 }
 
 .monster-container {
@@ -465,28 +517,22 @@ input {
     transform: translateY(-100px);
 }
 
-.math-task {
+.task {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
-    font-size: 30px;
+    align-items: center;
 }
 
-.math-task input {
-    width: 70px;
+.task > * {
+    margin: 10px 0;
 }
 
-.math-task > * {
-    margin: 0 10px;
+.task-correct {
+    background-color: #adff8a;
 }
 
-input[type=number] {
-    -moz-appearance:textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.task-wrong {
+    background-color: #ff9f84;
 }
 

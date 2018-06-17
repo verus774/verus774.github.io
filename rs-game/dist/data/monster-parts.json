@@ -1,6 +1,0 @@
-{
-  "head": ["src/img/monsters/head/0.png", "src/img/monsters/head/1.png", "src/img/monsters/head/2.png", "src/img/monsters/head/3.png"],
-  "body": ["src/img/monsters/body/0.png", "src/img/monsters/body/1.png", "src/img/monsters/body/2.png", "src/img/monsters/body/3.png"],
-  "arms": ["src/img/monsters/arms/0.png", "src/img/monsters/arms/1.png", "src/img/monsters/arms/2.png", "src/img/monsters/arms/3.png"],
-  "legs": ["src/img/monsters/legs/0.png", "src/img/monsters/legs/1.png", "src/img/monsters/legs/2.png", "src/img/monsters/legs/3.png"]
-}
