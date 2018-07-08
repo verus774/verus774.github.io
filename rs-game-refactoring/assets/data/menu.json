@@ -1,0 +1,5 @@
+[
+  {"id": "spells", "title": "Заклинания", "img": "assets/img/menu/spells.jpg"},
+  {"id": "give-up", "title": "Сдаться", "img": "assets/img/menu/give-up.jpg"},
+  {"id": "scores", "title": "Таблица рекордов", "img": "assets/img/menu/scores.jpg"}
+]

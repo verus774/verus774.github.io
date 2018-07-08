@@ -1,0 +1,8 @@
+[
+  {"id": "1", "title": "Порча", "img": "assets/img/spells/evil-eye-red.png", "value": -10, "difficulty": 1},
+  {"id": "2", "title": "Шары ярости", "img": "assets/img/spells/fireball-red.png", "value": -20, "difficulty": 2},
+  {"id": "3", "title": "Меч истины", "img": "assets/img/spells/sword-red.png", "value": -30, "difficulty": 3},
+  {"id": "4", "title": "Нефритовое сердце", "img": "assets/img/spells/heal-jade.png", "value": 10, "difficulty": 1},
+  {"id": "5", "title": "Королевское сердце", "img": "assets/img/spells/heal-royal.png", "value": 20, "difficulty": 2},
+  {"id": "6", "title": "Подорожник судьбы", "img": "assets/img/spells/leaf-acid.png", "value": 30, "difficulty": 3}
+]

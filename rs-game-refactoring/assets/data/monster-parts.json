@@ -1,0 +1,6 @@
+{
+  "head": ["assets/img/monsters/head/0.png", "assets/img/monsters/head/1.png", "assets/img/monsters/head/2.png", "assets/img/monsters/head/3.png"],
+  "body": ["assets/img/monsters/body/0.png", "assets/img/monsters/body/1.png", "assets/img/monsters/body/2.png", "assets/img/monsters/body/3.png"],
+  "arms": ["assets/img/monsters/arms/0.png", "assets/img/monsters/arms/1.png", "assets/img/monsters/arms/2.png", "assets/img/monsters/arms/3.png"],
+  "legs": ["assets/img/monsters/legs/0.png", "assets/img/monsters/legs/1.png", "assets/img/monsters/legs/2.png", "assets/img/monsters/legs/3.png"]
+}
